@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
 import UploadfileComponent from "../components/uploadfile";
-import {saveFileDetails, fetchFileDetails} from "../../actions/fileactions";
+import {saveFileDetails, fetchFileDetails} from "../actions/fileactions";
 
 class UploadFile extends Component {
 

@@ -5,8 +5,7 @@ import {
   Switch,
   NavLink,
 } from "react-router-dom";
-import UploadfileComponent from "../components/uploadfile";
-import FilesList from "../components/listfile";
+import UploadFile from "../containers/uploadfile";
 
 
 class Routing extends Component {
@@ -14,7 +13,7 @@ class Routing extends Component {
     return (
       <BrowserRouter>
         <Switch>
-            <Route exact path="/" component={UploadfileComponent}/>
+            <Route exact path="/" component={UploadFile}/>
         </Switch>
       </BrowserRouter>
     );

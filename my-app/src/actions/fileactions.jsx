@@ -40,11 +40,13 @@ export function FilelistFailure(data) {
 
 //save the uploaded files with api
 export const saveFileDetails = (data) => (dispatch) => {
+  console.log(data,'data for api')
     fetch('http://10.10.0.61:9005/file/upload/', {
           method: "post",
-          body: JSON.stringify(data),
+          body: data,
           headers: {
-            "Content-Type": "application/x-www-form-urlencoded,charset=UTF-8"
+            'Content-Type': "multipart/form-data; boundary=032a1ab685934650abbe059cb45d6ff3",
+            // 'X-CSRFToken': csrftoken
           },
         }).then(function(response) {
 
